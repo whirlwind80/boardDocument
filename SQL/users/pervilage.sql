@@ -1,0 +1,2 @@
+GRANT SELECT, INSERT, DELETE ON board.* TO boardUser@'%';
+FLUSH PRIVILEGES;

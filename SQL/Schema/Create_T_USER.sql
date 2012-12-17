@@ -1,0 +1,17 @@
+USE board;
+
+CREATE  TABLE IF NOT EXISTS board.T_USER (
+	id INT(9) NOT NULL AUTO_INCREMENT ,
+	account VARCHAR(20) NOT NULL UNIQUE,
+	passwd VARCHAR(40) NOT NULL,
+	email VARCHAR(255) NOT NULL UNIQUE,
+	accountName VARCHAR(255) NOT NULL,
+	role_id INT(9) NOT NULL,
+	create_dateTime DATETIME NOT NULL,
+	create_user INT(9) NOT NULL,
+	update_dateTime DATETIME NOT NULL,
+	date_user INT(9) NOT NULL,
+	PRIMARY KEY (id)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
